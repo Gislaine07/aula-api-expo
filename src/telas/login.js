@@ -1,11 +1,22 @@
  
-import { View, Text } from 'react-native'; 
-
+import { View, Text, Pressable } from 'react-native'; 
+import { Link, useNavigation } from '@react-navigation/native';
+import { Button } from '@react-navigation/elements';
 
 export default function Login(){
+
+     const navigation = useNavigation();
+
     return (
         <View>
             <Text>Login</Text>
+            <Button screen="home">Acessar o sistema</Button>
+            <Link screen="recsenha">Esqueci a senha</Link>
+             <Pressable
+                onPress={() => Navigation.navigate('cadusuario')}
+                >
+                <Text>Cadastrar usuário</Text>
+             </Pressable>
         </View>
     );
 }
