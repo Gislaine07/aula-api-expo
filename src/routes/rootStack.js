@@ -48,9 +48,9 @@ export default function RootStack() {
         options={{
           title: 'My home',
           headerStyle: {
-            backgroundColor: '#924f11',
+            backgroundColor: '#a70b92',
           },
-          headerTintColor: '#067c33',
+          headerTintColor: '#cbdf14',
           headerTitleStyle: {
             fontWeight: 'bold',
           },
